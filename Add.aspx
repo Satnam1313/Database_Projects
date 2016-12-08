@@ -70,6 +70,7 @@
                 
                 
         </section>  <mark class="text-danger"><asp:ValidationSummary ID="Summary" runat="server" HeaderText="Please fullfill following requirements"/></mark>
+        <p ID="dynamic" style="font-family: 'Pacifico', cursive; font-size: 25px" runat="server"></p>
    </div></div>
 </asp:Content>
 
