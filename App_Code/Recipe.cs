@@ -17,6 +17,10 @@ public class Recipe
 
     #region Properties
     public string Name { get; set; }
+    public string Description { get; set; }
+    public string Price { get; set; }
+    public string Cuisine { get; set; }
+    public string id { get; set; }
     #endregion
 
     public static ICollection All
@@ -44,7 +48,11 @@ public class Recipe
             {
                 recipesList.Add(new Recipe()
                 {
-                    Name = reader["RECIPENAME"].ToString()
+                    Name = reader["RECIPENAME"].ToString(),
+                    Cuisine = reader["CUISINE"].ToString(),
+                    Description =reader["RECIPEDESCRIPTION"].ToString(),
+                    Price =reader["RECIPEPRICE"].ToString(),
+                    id=reader["RECIPENUMBER"].ToString()
                 });
             }
         }

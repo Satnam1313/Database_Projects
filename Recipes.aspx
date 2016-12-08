@@ -9,7 +9,24 @@
         <div class="row">
             <asp:Repeater runat="server" DataSourceID="RecipesDataSource">
                 <ItemTemplate>
-                    <h4><%# Eval("Name") %></h4>
+                    <div class="col-xs-6 col-md-4">
+						<div class="thumbnail">
+							<div class="caption section">
+								<h3><%# Eval("Name") %></h3>
+								<h4>Cuisine: <%# Eval("Cuisine") %></h4>
+								 <h4>Price:$<%# Eval("Price") %></h4>
+								<p>
+									<%# Eval("Description") %>
+								</p>
+								<div>
+								    
+								    <button class="btn btn-primary"  id="<%# Eval("Id") %>">Order</button>
+<%--									<a class="btn btn-primary" href="../Orders/Order.aspx?f=<%# Eval("Id") %>">Order</a>--%>
+								</div>
+							</div>
+						</div>
+					</div>
+                    
                 </ItemTemplate>
             </asp:Repeater>
             <div id="dynamic" runat="server">
