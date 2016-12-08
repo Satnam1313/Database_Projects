@@ -28,6 +28,9 @@ public partial class Add : Page
     }
     protected void Submit_Click(object sender, EventArgs e)
     {
+        //string user = Session["userName"].ToString();
+        Random priceRandom=new Random();
+
         using (var conn = new OracleConnection(connectionstring))
         {
             conn.Open();
@@ -89,7 +92,7 @@ public partial class Add : Page
             {
                 ParameterName = "PRICE",
                 Direction = ParameterDirection.Input,
-                Value = 5,
+                Value = priceRandom.Next(5,25),
                 OracleDbType = OracleDbType.Varchar2,
                 Size = 90
             };
