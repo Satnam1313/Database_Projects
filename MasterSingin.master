@@ -63,7 +63,7 @@
     
                         <div class="navbarbutton  pull-right  "><div class="dropdown">
                               <div class="btn-toolbar"></div>
-                                    <button class="btn btn-info"><span class="text-justify">My Orders</span></button>
+                                    <a class="btn btn-info" href="Orders.aspx" ><span class="text-justify">My Orders</span></a>
                               <div class="btn btn-group">
                                     <button type="button" class="btn btn-info">Hi  <asp:Label ID="drop" runat="server" Text=""></asp:Label></button>
                            <button type="button" class="btn btn-info dropdown-toggle" id="Premission" data-toggle="dropdown" aria-haspopup="True" aria-expanded="False" runat="server"> <span class="caret"></span>
@@ -71,8 +71,6 @@
                            </button>
                              <ul class="dropdown-menu" style="background-color: #5bc0de" aria-labelledby="Premission">
                                 <li ><asp:Button CssClass="btn btn-group-justified " runat="server" Text="Logout" OnClick="Logout_Click"></asp:Button></li>
-                                <li><a href="#">Playlist</a></li>
-                                <li><a href="#">Playlist</a></li>
                             </ul>
                                                 </div></div>
                         </div>
