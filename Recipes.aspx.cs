@@ -185,6 +185,7 @@ public partial class Recipes : Page
                 com.BindByName = true;
                 com.ExecuteNonQuery();
                 conn.Close();
+                Response.Redirect("Orders.aspx");
             }
         else
             Response.Redirect("Signin.aspx");
