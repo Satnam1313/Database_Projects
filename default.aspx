@@ -47,7 +47,7 @@
     <div class="services container">
         <div class="row">
             <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6
-                 col-md-4  ">
+                 col-md-12">
                 <a href="Add.aspx" style="color: #000000">
                     <img src="images/Addicon.png" alt="icon" style="height: 179px; width: 184px; margin-right: 0px;"/>
                     <div class="col-xs-offset-1 col-sm-offset-0">
@@ -57,32 +57,8 @@
                     </div>
                 </a>
             </section>
-            <div class="services container">
-                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 ">
-                    <a href="Search.aspx" style="color: black">
-                        <img src="images/Searchicon.png" alt="icon" style="height: 179px; width: 184px;"/>
-                        <div class="col-xs-offset-1 col-sm-offset-0">
-                            <h3>Search Recipe</h3>
-                            <p >
-                                You can serach all the recipies that are specified by the user as public. Recipies specified as <strong class="mark">Private</strong> can only be assessed by <strong class="mark">owner</strong>.
-                            </p>
-                        </div>
-                    </a>
-                </section>
-                <div class="services container">
-                    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0  col-sm-12 col-md-4 ">
-                        <a href="Recipes.aspx" style="color: #000000">
-                            <img src="images/Listicon.png" alt="icon" style="height: 179px; width: 184px;"/>
-                            <div class="col-xs-offset-1 col-sm-offset-0">
-                                <h3> List of Recipies</h3>
-                                You can look the most viewed and popular recipies.
-                            </div>
-                        </a>
-                    </section>
-
-                </div>
-            </div>
+           </div>
         </div>
-    </div>
+    
 </asp:Content>
 
