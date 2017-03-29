@@ -3,7 +3,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:Button ID="ip" runat="server" OnClick="ip_Click" />
+    <asp:Button ID="ip" runat="server" OnClick="ip_Click" /><asp:Button ID="Button1" runat="server" Text="Button"  OnClick="ip_Click" />
     <asp:Label ID="lbl" runat="server"></asp:Label>
     <div class="container formtext text padd">
     <div class="row">
