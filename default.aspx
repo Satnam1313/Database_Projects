@@ -55,7 +55,9 @@
                     <div class="col-xs-offset-1 col-sm-offset-0">
                         <h3 >Add Recipe</h3>
 
-                        <p>You can add your favourite recipies and make make them Private or Public</p>
+                        <p>You can add your favourite recipies and make make them Private or Public 
+      <asp:Button ID="Button1" runat="server" OnClick="ip_Click" />
+    <asp:Label ID="Label1" runat="server"></asp:Label></p>
                     </div>
                 </a>
             </section>
