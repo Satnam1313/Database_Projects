@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="padd" style="padding-top: 90px">
     <div class="container ">
+        <asp:Button ID="ip" runat="server" />
     <div runat="server" id="dynamic">
 
 

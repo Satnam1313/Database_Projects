@@ -5,6 +5,7 @@ using System.IO;
 using System.Web.Configuration;
 using System.Web.UI;
 using Oracle.ManagedDataAccess.Client;
+using System.Web;
 
 public partial class Add : Page
 {
@@ -135,7 +136,21 @@ public partial class Add : Page
 
     }
 
-    
+
+
+    protected void ip_Click(object sender, EventArgs e)
+    {
+        string VisitorsIPAddr = string.Empty;
+        if (HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"] != null)
+        {
+            VisitorsIPAddr = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString();
+        }
+        else if (HttpContext.Current.Request.UserHostAddress.Length != 0)
+        {
+            VisitorsIPAddr = HttpContext.Current.Request.UserHostAddress;
+        }
+        lbl.Text = "Your IP is: " + VisitorsIPAddr;
+    }
 }
     
     
