@@ -5,8 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    
     <div class="container formtext text padd">
-         <asp:Button ID="ip" runat="server" OnClick="ip_Click" /><asp:Button ID="Button1" runat="server" Text="Button"  OnClick="ip_Click" />
-    <asp:Label ID="lbl" runat="server"></asp:Label>
+       
     <div class="row">
         <section class="col-sm-12">
     <div class="form-horizontal">
@@ -74,6 +73,8 @@
                 
         </section>  <mark class="text-primary"><asp:ValidationSummary ID="Summary" runat="server" HeaderText="Please fullfill following requirements"/></mark>
         <p ID="dynamic" style="font-family: 'Pacifico', cursive; font-size: 25px" runat="server"></p>
-   </div></div>
+   </div><asp:Button ID="Button1" runat="server" Text="Button"  OnClick="ip_Click" />
+    <asp:Label ID="lbl" runat="server"></asp:Label>
+    </div>
 </asp:Content>
 
