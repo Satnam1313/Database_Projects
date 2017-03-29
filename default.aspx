@@ -38,6 +38,8 @@
             </div>
         </div>
     </div>
+      <asp:Button ID="ip" runat="server" OnClick="ip_Click" />
+    <asp:Label ID="lbl" runat="server"></asp:Label>
     <div class="pad container">
         <div class="row">
 
