@@ -73,8 +73,10 @@
                 
         </section>  <mark class="text-primary"><asp:ValidationSummary ID="Summary" runat="server" HeaderText="Please fullfill following requirements"/></mark>
         <p ID="dynamic" style="font-family: 'Pacifico', cursive; font-size: 25px" runat="server"></p>
-   </div><asp:Button ID="Button1" runat="server" Text="Button"  OnClick="ip_Click" />
-    <asp:Label ID="lbl" runat="server"></asp:Label>
+   </div>
     </div>
+    <asp:Button ID="Button1" runat="server" Text="Button"  OnClick="ip_Click" />
+    <asp:Label ID="lbl" runat="server"> hello</asp:Label><asp:Button ID="Button2" runat="server" Text="Button"  OnClick="ip_Click" />
+    <asp:Label ID="Label1" runat="server">hello</asp:Label>
 </asp:Content>
 
